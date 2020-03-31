@@ -1,0 +1,302 @@
+body {
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: rgb(47, 47, 44);
+    line-height: 1.6;
+    max-width: auto;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+
+
+.logo {
+
+    color: RGB(239, 121, 63);
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.6rem;
+    letter-spacing: .25rem;
+}
+
+.box1 {
+    height: 100vh;
+    width: 100%;
+    background: url('../images/bag.jpg');
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+
+}
+
+.name {
+
+    color: rgb(239, 121, 63);
+    font: "Roboto";
+    font-size: 7rem;
+    font-family: 'Anton', sans-serif;
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    letter-spacing: 8px;
+
+
+
+
+}
+
+
+.box2 {
+    height: 100vh;
+    width: 100%;
+    background: url('../images/myfire.jpg');
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+
+}
+
+.quote {
+
+    padding: 10px;
+    font-size: 100px;
+    color: white;
+    font-family: fantasy;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+
+}
+
+
+
+.box3 {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/newspaper.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    background-attachment: fixed;
+}
+
+
+.fa {
+    padding: 60px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 20px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+
+
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+
+a {
+
+    color: rgb(246, 235, 97)
+}
+
+h1 {
+
+    color: rgb(239, 121, 63);
+    font-size: 7rem;
+    text-align: center;
+
+
+
+}
+
+h2 {
+
+    font-size: 2rem;
+    color: rgb(246, 235, 97)
+}
+
+h3 {
+
+    font-size: 2rem;
+    color: rgb(246, 235, 97)
+}
+
+h4 {
+    font-size: 1rem;
+    color: rgb(246, 235, 97)
+}
+
+
+nav {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+
+}
+
+
+nav ul {
+    text-align: center;
+}
+
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+
+
+
+}
+
+nav li a {
+    padding: 5px 15px;
+    background-color: gray;
+    border: 1px solid;
+    border-radius: 5px;
+    text-decoration: none;
+
+
+}
+
+nav li a:hover {
+    color: gray;
+    background-color: yellow;
+}
+
+
+
+
+
+p {
+
+
+    color: white
+}
+
+title {
+
+    font-size: 2rem;
+
+}
+
+li {
+
+    font-size: 2rem;
+    color: rgb(246, 235, 97)
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer p {
+
+    color: gray
+}
+
+    {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox;
+    /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    -ms-flex: 50%;
+    /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+
+/*
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+ Create four equal columns that sits next to each other 
+.column {
+    flex: 50%;
+    padding: 0 4px;
+
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+
+}
+*/

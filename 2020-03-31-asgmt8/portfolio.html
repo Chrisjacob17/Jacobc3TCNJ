@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title> Portfolio of Sebi </title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="sketch.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!--GLOBAL INFO-->
+    <header>
+        <br>
+        <div class="logo"><a href="index.html"> Sebi's<br>Abstracts</a></div>
+
+
+        <nav>
+            <ul>
+
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <hr>
+    <main>
+
+
+        <!--PORTFOLIO PAGE-->
+        <h1>Portfolio</h1>
+        <!-- Header -->
+        <div class="header" id="myHeader">
+            <p>Click on the buttons to change the grid view.</p>
+            <button class="btn" onclick="one()">1</button>
+            <button class="btn active" onclick="two()">2</button>
+            <button class="btn" onclick="four()">4</button>
+        </div>
+
+        <div class="row">
+
+            <div class="column">
+                <img src="images/bag.jpg">
+                <img src="images/book.jpg">
+                <img src="images/book2.jpg">
+                <img src="images/candle.jpg">
+                <img src="images/cross.jpg">
+                <img src="images/dandelion.jpg">
+            </div>
+            <div class="column">
+                <img src="images/fireball.jpg">
+                <img src="images/firework.jpg">
+                <img src="images/firework2.jpg">
+                <img src="images/firework3.jpg">
+                <img src="images/firework4.jpg">
+                <img src="images/hands.jpg">
+            </div>
+            <div class="column">
+                <img src="images/heart.jpg">
+                <img src="images/hotwheels.jpg">
+                <img src="images/ice.jpg">
+                <img src="images/lighter.jpg">
+                <img src="images/matches2.jpg">
+                <img src="images/matches3.jpg">
+            </div>
+            <div class="column">
+                <img src="images/myfire.jpg">
+                <img src="images/newspaper.jpg">
+                <img src="images/onfire.jpg">
+                <img src="images/pain.jpg">
+                <img src="images/pit.jpg">
+                <img src="images/saveme.jpg">
+            </div>
+            <div class="column">
+                <img src="images/shining.jpg">
+                <img src="images/spark.jpg">
+                <img src="images/three.jpg">
+                <img src="images/tornado.jpg">
+                <img src="images/water.jpg">
+                <img src="images/why.jpg">
+
+            </div>
+        </div>
+
+        <script>
+            // Get the elements with class="column"
+            var elements = document.getElementsByClassName("column");
+
+            // Declare a loop variable
+            var i;
+
+            // Full-width images
+            function one() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.msFlex = "100%"; // IE10
+                    elements[i].style.flex = "100%";
+                }
+            }
+
+            // Two images side by side
+            function two() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.msFlex = "50%"; // IE10
+                    elements[i].style.flex = "50%";
+                }
+            }
+
+            // Four images side by side
+            function four() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.msFlex = "25%"; // IE10
+                    elements[i].style.flex = "25%";
+                }
+            }
+
+            // Add active class to the current button (highlight it)
+            var header = document.getElementById("myHeader");
+            var btns = header.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+        </script>
+
+
+
+
+        <hr>
+
+        <footer>
+            <p>Copyright 2020 - Sebi's Abstracts </p>
+
+        </footer>
+
+    </main>
+
+</body></html>
